@@ -3,7 +3,7 @@
 import { getIronSession } from 'iron-session';
 import { cookies } from 'next/headers';
 
-import { env } from '@/env.mjs';
+
 import { Err, Ok, Result } from '@/types';
 
 interface SecurityData {
