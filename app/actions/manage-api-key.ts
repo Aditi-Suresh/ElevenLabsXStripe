@@ -11,7 +11,7 @@ interface SecurityData {
 }
 
 const sessionOptions = {
-  password: env.IRON_SESSION_SECRET_KEY,
+  password: process.env.IRON_SESSION_SECRET_KEY || "lecturecast_secret_123456789",
   cookieName: 'elevenlabs-session',
   cookieOptions: {
     httpOnly: true,
